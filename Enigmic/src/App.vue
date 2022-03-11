@@ -6,12 +6,12 @@ import { RouterLink, RouterView } from 'vue-router'
   <header class="container">
       <nav class="nav">
         <RouterLink class="col-md-4 text-center my-auto" to="/portfolio">Portfolio</RouterLink>
-        <RouterLink class="col-md-4 text-center" to="/"><img alt="Enigmic logo" class="logo" src="@/assets/Enigmic.Logo.Long.02.png" /></RouterLink>
+        <RouterLink class="col-md-4 text-center my-auto" to="/"><img alt="Enigmic logo" class="logo" src="@/assets/Enigmic.Logo.Long.02.png" /></RouterLink>
         <RouterLink class="col-md-4 text-center my-auto" to="/contact">Contact</RouterLink>
       </nav>
   </header>
 
-  <RouterView />
+  <RouterView class="container"/>
 </template>
 
 <style>
@@ -29,6 +29,7 @@ import { RouterLink, RouterView } from 'vue-router'
 .nav {
   width: 100%;
   font-size: 2rem;
+  min-height: 100px;
 }
 
 .nav a {
